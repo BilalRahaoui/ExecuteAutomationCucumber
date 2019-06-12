@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2019-06-12T15:40:27.896Z",
+        "start_timestamp": "2019-06-12T16:00:51.927Z",
         "before": [
           {
             "result": {
-              "duration": 742100,
+              "duration": 630300,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 3,
+        "line": 13,
         "name": "Login with valid username and password",
         "description": "",
-        "id": "login-feature.;login-with-valid-username-and-password",
+        "id": "login-feature.;login-with-valid-username-and-password;;2",
         "after": [
           {
             "result": {
-              "duration": 777766100,
+              "duration": 663432700,
               "status": "passed"
             },
             "match": {
@@ -31,14 +31,14 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 4039076300,
+              "duration": 4242386200,
               "status": "passed"
             },
-            "line": 4,
+            "line": 5,
             "name": "Open browser",
             "match": {
               "location": "LoginSteps.openBrowser()"
@@ -47,10 +47,10 @@
           },
           {
             "result": {
-              "duration": 7778140800,
+              "duration": 22167155800,
               "status": "passed"
             },
-            "line": 5,
+            "line": 6,
             "name": "Enter the url \"http://practice.automationtesting.in/\"",
             "match": {
               "arguments": [
@@ -65,10 +65,10 @@
           },
           {
             "result": {
-              "duration": 5245755400,
+              "duration": 13763026400,
               "status": "passed"
             },
-            "line": 6,
+            "line": 7,
             "name": "Click on My Account link",
             "match": {
               "location": "LoginSteps.clickOnMyAccountLink()"
@@ -77,11 +77,11 @@
           },
           {
             "result": {
-              "duration": 232814100,
+              "duration": 203721000,
               "status": "passed"
             },
-            "line": 7,
-            "name": "Send registered username as \"rahaoui.bilalma\" and password as \"Testing^^password@12456#\"",
+            "line": 8,
+            "name": "Send registered username as \"rahaoui.bilalma\" and password as \"invalid.password\"",
             "match": {
               "arguments": [
                 {
@@ -89,7 +89,7 @@
                   "offset": 29
                 },
                 {
-                  "val": "Testing^^password@12456#",
+                  "val": "invalid.password",
                   "offset": 63
                 }
               ],
@@ -99,10 +99,10 @@
           },
           {
             "result": {
-              "duration": 3909089300,
+              "duration": 2085211300,
               "status": "passed"
             },
-            "line": 8,
+            "line": 9,
             "name": "Click on LOGIN button",
             "match": {
               "location": "LoginSteps.clickOnLOGINButton()"
@@ -111,10 +111,255 @@
           },
           {
             "result": {
-              "duration": 37263300,
+              "error_message": "java.lang.AssertionError: Test failed because text is not visible or not match\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat Steps.LoginSteps.userMustBeSuccessfullyRedirectedToHomePage(LoginSteps.java:68)\r\n\tat ✽.User must be successfully redirected to home page(file:src/test/java/Feature/Login.feature:10)\r\n",
+              "duration": 41420500,
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "User must be successfully redirected to home page",
+            "match": {
+              "location": "LoginSteps.userMustBeSuccessfullyRedirectedToHomePage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-06-12T16:01:35.116Z",
+        "before": [
+          {
+            "result": {
+              "duration": 60900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginSteps.setup()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Login with valid username and password",
+        "description": "",
+        "id": "login-feature.;login-with-valid-username-and-password;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 656859100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginSteps.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3373051100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Open browser",
+            "match": {
+              "location": "LoginSteps.openBrowser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6507719100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Enter the url \"http://practice.automationtesting.in/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://practice.automationtesting.in/",
+                  "offset": 15
+                }
+              ],
+              "location": "LoginSteps.enterTheUrl(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5350275700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Click on My Account link",
+            "match": {
+              "location": "LoginSteps.clickOnMyAccountLink()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 229182200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Send registered username as \"invalid.email\" and password as \"Testing^^password@12456#\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "invalid.email",
+                  "offset": 29
+                },
+                {
+                  "val": "Testing^^password@12456#",
+                  "offset": 61
+                }
+              ],
+              "location": "LoginSteps.sendRegisteredUsernameAsAndPasswordAs(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3127442900,
               "status": "passed"
             },
             "line": 9,
+            "name": "Click on LOGIN button",
+            "match": {
+              "location": "LoginSteps.clickOnLOGINButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: Test failed because text is not visible or not match\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat Steps.LoginSteps.userMustBeSuccessfullyRedirectedToHomePage(LoginSteps.java:68)\r\n\tat ✽.User must be successfully redirected to home page(file:src/test/java/Feature/Login.feature:10)\r\n",
+              "duration": 50696300,
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "User must be successfully redirected to home page",
+            "match": {
+              "location": "LoginSteps.userMustBeSuccessfullyRedirectedToHomePage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-06-12T16:01:54.413Z",
+        "before": [
+          {
+            "result": {
+              "duration": 171900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginSteps.setup()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Login with valid username and password",
+        "description": "",
+        "id": "login-feature.;login-with-valid-username-and-password;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 673305200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginSteps.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3464118500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Open browser",
+            "match": {
+              "location": "LoginSteps.openBrowser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 10243316300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Enter the url \"http://practice.automationtesting.in/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://practice.automationtesting.in/",
+                  "offset": 15
+                }
+              ],
+              "location": "LoginSteps.enterTheUrl(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4928285500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Click on My Account link",
+            "match": {
+              "location": "LoginSteps.clickOnMyAccountLink()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 242123800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Send registered username as \"invalid.email\" and password as \"invalid.password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "invalid.email",
+                  "offset": 29
+                },
+                {
+                  "val": "invalid.password",
+                  "offset": 61
+                }
+              ],
+              "location": "LoginSteps.sendRegisteredUsernameAsAndPasswordAs(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 23718520600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Click on LOGIN button",
+            "match": {
+              "location": "LoginSteps.clickOnLOGINButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: Test failed because text is not visible or not match\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat Steps.LoginSteps.userMustBeSuccessfullyRedirectedToHomePage(LoginSteps.java:68)\r\n\tat ✽.User must be successfully redirected to home page(file:src/test/java/Feature/Login.feature:10)\r\n",
+              "duration": 48705600,
+              "status": "failed"
+            },
+            "line": 10,
             "name": "User must be successfully redirected to home page",
             "match": {
               "location": "LoginSteps.userMustBeSuccessfullyRedirectedToHomePage()"
