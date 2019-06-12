@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2019-06-12T14:28:50.239Z",
+        "start_timestamp": "2019-06-12T15:40:27.896Z",
         "before": [
           {
             "result": {
-              "duration": 627400,
+              "duration": 742100,
               "status": "passed"
             },
             "match": {
@@ -22,7 +22,7 @@
         "after": [
           {
             "result": {
-              "duration": 763015300,
+              "duration": 777766100,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4158789900,
+              "duration": 4039076300,
               "status": "passed"
             },
             "line": 4,
@@ -47,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 6920284700,
+              "duration": 7778140800,
               "status": "passed"
             },
             "line": 5,
@@ -65,7 +65,7 @@
           },
           {
             "result": {
-              "duration": 14114488800,
+              "duration": 5245755400,
               "status": "passed"
             },
             "line": 6,
@@ -77,19 +77,29 @@
           },
           {
             "result": {
-              "duration": 253823400,
+              "duration": 232814100,
               "status": "passed"
             },
             "line": 7,
-            "name": "Send registered username and password",
+            "name": "Send registered username as \"rahaoui.bilalma\" and password as \"Testing^^password@12456#\"",
             "match": {
-              "location": "LoginSteps.sendRegisteredUsernameAndPassword()"
+              "arguments": [
+                {
+                  "val": "rahaoui.bilalma",
+                  "offset": 29
+                },
+                {
+                  "val": "Testing^^password@12456#",
+                  "offset": 63
+                }
+              ],
+              "location": "LoginSteps.sendRegisteredUsernameAsAndPasswordAs(String,String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 5640588200,
+              "duration": 3909089300,
               "status": "passed"
             },
             "line": 8,
@@ -101,7 +111,7 @@
           },
           {
             "result": {
-              "duration": 38941000,
+              "duration": 37263300,
               "status": "passed"
             },
             "line": 9,

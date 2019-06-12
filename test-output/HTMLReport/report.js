@@ -43,11 +43,11 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Send registered username and password",
+  "name": "Send registered username as \"rahaoui.bilalma\" and password as \"Testing^^password@12456#\"",
   "keyword": "And "
 });
 formatter.match({
-  "location": "LoginSteps.sendRegisteredUsernameAndPassword()"
+  "location": "LoginSteps.sendRegisteredUsernameAsAndPasswordAs(String,String)"
 });
 formatter.result({
   "status": "passed"

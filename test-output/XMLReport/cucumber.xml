@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="31.894682">
-    <testcase classname="Login feature." name="Login with valid username and password" time="31.894682">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="22.024062">
+    <testcase classname="Login feature." name="Login with valid username and password" time="22.024062">
         <system-out>
             <![CDATA[Given Open browser..........................................................passed
 When Enter the url "http://practice.automationtesting.in/"..................passed
 And Click on My Account link................................................passed
-And Send registered username and password...................................passed
+And Send registered username as "rahaoui.bilalma" and password as "Testing^^password@12456#".passed
 And Click on LOGIN button...................................................passed
 Then User must be successfully redirected to home page......................passed
 ]]>
