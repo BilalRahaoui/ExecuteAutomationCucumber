@@ -1,0 +1,124 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2019-06-12T14:28:50.239Z",
+        "before": [
+          {
+            "result": {
+              "duration": 627400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginSteps.setup()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Login with valid username and password",
+        "description": "",
+        "id": "login-feature.;login-with-valid-username-and-password",
+        "after": [
+          {
+            "result": {
+              "duration": 763015300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginSteps.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4158789900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Open browser",
+            "match": {
+              "location": "LoginSteps.openBrowser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6920284700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Enter the url \"http://practice.automationtesting.in/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://practice.automationtesting.in/",
+                  "offset": 15
+                }
+              ],
+              "location": "LoginSteps.enterTheUrl(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 14114488800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Click on My Account link",
+            "match": {
+              "location": "LoginSteps.clickOnMyAccountLink()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 253823400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Send registered username and password",
+            "match": {
+              "location": "LoginSteps.sendRegisteredUsernameAndPassword()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5640588200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Click on LOGIN button",
+            "match": {
+              "location": "LoginSteps.clickOnLOGINButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 38941000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User must be successfully redirected to home page",
+            "match": {
+              "location": "LoginSteps.userMustBeSuccessfullyRedirectedToHomePage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login feature.",
+    "description": "  Description : This feature will test login functionality for the given application \"automationtesting.in\"",
+    "id": "login-feature.",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/Feature/Login.feature",
+    "tags": []
+  }
+]
