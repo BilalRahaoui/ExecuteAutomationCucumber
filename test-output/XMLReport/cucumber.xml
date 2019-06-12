@@ -1,57 +1,53 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="3" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="105.784639">
-    <testcase classname="Login feature." name="Login with valid username and password" time="43.169631">
-        <failure message="java.lang.AssertionError: Test failed because text is not visible or not match&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at Steps.LoginSteps.userMustBeSuccessfullyRedirectedToHomePage(LoginSteps.java:68)&#13;&#10;&#9;at ✽.User must be successfully redirected to home page(file:src/test/java/Feature/Login.feature:10)&#13;&#10;">
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="218.286605">
+    <testcase classname="Login feature." name="Login with invalid data" time="59.961845">
+        <system-out>
             <![CDATA[Given Open browser..........................................................passed
 When Enter the url "http://practice.automationtesting.in/"..................passed
 And Click on My Account link................................................passed
-And Send registered username as "rahaoui.bilalma" and password as "invalid.password".passed
+And Send username as "rahaoui.bilalma" and password as "invalid.password"...passed
 And Click on LOGIN button...................................................passed
-Then User must be successfully redirected to home page......................failed
+Then verify login...........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Login feature." name="Login with invalid data 2" time="26.333801">
+        <failure message="java.lang.AssertionError: Test failed,error message in login page should not be visible&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#13;&#10;&#9;at Steps.LoginSteps.verifyLogin(LoginSteps.java:86)&#13;&#10;&#9;at ✽.verify login(file:src/test/java/Feature/Login.feature:18)&#13;&#10;">
+            <![CDATA[Given Open browser..........................................................passed
+When Enter the url "http://practice.automationtesting.in/"..................passed
+And Click on My Account link................................................passed
+And Send username as "rahaoui.bilalma" and password as "Testing^^password@12456#".passed
+And Click on LOGIN button...................................................passed
+Then verify login...........................................................failed
 
 StackTrace:
-java.lang.AssertionError: Test failed because text is not visible or not match
+java.lang.AssertionError: Test failed,error message in login page should not be visible
 	at org.junit.Assert.fail(Assert.java:88)
-	at org.junit.Assert.assertTrue(Assert.java:41)
-	at Steps.LoginSteps.userMustBeSuccessfullyRedirectedToHomePage(LoginSteps.java:68)
-	at ✽.User must be successfully redirected to home page(file:src/test/java/Feature/Login.feature:10)
+	at Steps.LoginSteps.verifyLogin(LoginSteps.java:86)
+	at ✽.verify login(file:src/test/java/Feature/Login.feature:18)
 ]]>
         </failure>
     </testcase>
-    <testcase classname="Login feature." name="Login with valid username and password 2" time="19.295688">
-        <failure message="java.lang.AssertionError: Test failed because text is not visible or not match&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at Steps.LoginSteps.userMustBeSuccessfullyRedirectedToHomePage(LoginSteps.java:68)&#13;&#10;&#9;at ✽.User must be successfully redirected to home page(file:src/test/java/Feature/Login.feature:10)&#13;&#10;">
+    <testcase classname="Login feature." name="Login with invalid data 3" time="79.953926">
+        <system-out>
             <![CDATA[Given Open browser..........................................................passed
 When Enter the url "http://practice.automationtesting.in/"..................passed
 And Click on My Account link................................................passed
-And Send registered username as "invalid.email" and password as "Testing^^password@12456#".passed
+And Send username as "invalid.email" and password as "Testing^^password@12456#".passed
 And Click on LOGIN button...................................................passed
-Then User must be successfully redirected to home page......................failed
-
-StackTrace:
-java.lang.AssertionError: Test failed because text is not visible or not match
-	at org.junit.Assert.fail(Assert.java:88)
-	at org.junit.Assert.assertTrue(Assert.java:41)
-	at Steps.LoginSteps.userMustBeSuccessfullyRedirectedToHomePage(LoginSteps.java:68)
-	at ✽.User must be successfully redirected to home page(file:src/test/java/Feature/Login.feature:10)
+Then verify login...........................................................passed
 ]]>
-        </failure>
+        </system-out>
     </testcase>
-    <testcase classname="Login feature." name="Login with valid username and password 3" time="43.31932">
-        <failure message="java.lang.AssertionError: Test failed because text is not visible or not match&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at Steps.LoginSteps.userMustBeSuccessfullyRedirectedToHomePage(LoginSteps.java:68)&#13;&#10;&#9;at ✽.User must be successfully redirected to home page(file:src/test/java/Feature/Login.feature:10)&#13;&#10;">
+    <testcase classname="Login feature." name="Login with invalid data 4" time="52.037033">
+        <system-out>
             <![CDATA[Given Open browser..........................................................passed
 When Enter the url "http://practice.automationtesting.in/"..................passed
 And Click on My Account link................................................passed
-And Send registered username as "invalid.email" and password as "invalid.password".passed
+And Send username as "invalid.email" and password as "invalid.password".....passed
 And Click on LOGIN button...................................................passed
-Then User must be successfully redirected to home page......................failed
-
-StackTrace:
-java.lang.AssertionError: Test failed because text is not visible or not match
-	at org.junit.Assert.fail(Assert.java:88)
-	at org.junit.Assert.assertTrue(Assert.java:41)
-	at Steps.LoginSteps.userMustBeSuccessfullyRedirectedToHomePage(LoginSteps.java:68)
-	at ✽.User must be successfully redirected to home page(file:src/test/java/Feature/Login.feature:10)
+Then verify login...........................................................passed
 ]]>
-        </failure>
+        </system-out>
     </testcase>
 </testsuite>
