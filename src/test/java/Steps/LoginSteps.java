@@ -1,5 +1,6 @@
 package Steps;
 
+import cucumber.api.DataTable;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
@@ -15,8 +16,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.List;
 
 public class LoginSteps {
-    WebDriver driver = null;
-    public String globalusername = null;
+    private WebDriver driver = null;
+    private String globalusername = null;
 
     @Before()
     public void setup() {
@@ -49,6 +50,8 @@ public class LoginSteps {
         myAccountLink.click();
     }
 
+
+/*
     @And("Send username as \"([^\"]*)\" and password as \"([^\"]*)\"$")
     public void sendUsernameAsAndPasswordAs(String username, String password) {
         globalusername = username;
@@ -58,18 +61,35 @@ public class LoginSteps {
         passwordTextBox.sendKeys(password);
     }
 
+ */
+
+    @And("Send username and password")
+    public void sendUsernameAndPassword(DataTable table) {
+        List<List<String>> data = table.raw();
+
+        WebElement usernameTextBox = driver.findElement(By.id("username"));
+        WebElement passwordTextBox = driver.findElement(By.id("password"));
+        String username = data.get(0).get(0);
+        String password = data.get(0).get(1);
+        usernameTextBox.sendKeys(username);
+        passwordTextBox.sendKeys(password);
+        globalusername = username;
+    }
+
     @And("Click on LOGIN button")
     public void clickOnLOGINButton() {
         WebElement loginButton = driver.findElement(By.xpath("//input[@value='Login']"));
         loginButton.click();
     }
 
-    /*@Then("User must be successfully redirected to home page")
+    @Then("User must be successfully redirected to home page")
     public void userMustBeSuccessfullyRedirectedToHomePage() {
         WebElement textToCheck = driver.findElement(By.xpath("//div[@id='body']//p[1]"));
         boolean expectedResult = textToCheck.getText().contains(globalusername);
         Assert.assertTrue("Test failed because text is not visible or not match", expectedResult);
-    }*/
+    }
+
+    /*
 
     @Then("verify login")
     public void verifyLogin() {
@@ -83,19 +103,21 @@ public class LoginSteps {
             }
         }
         else{
-            Assert.fail("Test failed,error message in login page should not be visible");
+            Assert.fail("Test failed,login should not pass with invalid data!");
         }
     }
 
 
     //Method to calculate number of given element
-    public int elementIsPresent() {
+    private int elementIsPresent() {
         List<WebElement> listOfElements = driver.findElements(By.xpath("//ul[@class='woocommerce-error']"));
         int numberOfElementsFound = listOfElements.size();
         if (numberOfElementsFound == 0) {
-            return numberOfElementsFound;
+            return 0;
         } else {
             return numberOfElementsFound;
         }
     }
+*/
+
 }

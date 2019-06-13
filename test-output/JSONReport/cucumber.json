@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2019-06-12T19:36:00.104Z",
+        "start_timestamp": "2019-06-13T21:46:58.838Z",
         "before": [
           {
             "result": {
-              "duration": 768200,
+              "duration": 814200,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 21,
-        "name": "Login with invalid data",
+        "line": 26,
+        "name": "Login with different data",
         "description": "",
-        "id": "login-feature.;login-with-invalid-data;;2",
+        "id": "login-feature.;login-with-different-data",
         "after": [
           {
             "result": {
-              "duration": 701364600,
+              "duration": 762916600,
               "status": "passed"
             },
             "match": {
@@ -31,14 +31,14 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 4539532900,
+              "duration": 5584191000,
               "status": "passed"
             },
-            "line": 13,
+            "line": 27,
             "name": "Open browser",
             "match": {
               "location": "LoginSteps.openBrowser()"
@@ -47,10 +47,10 @@
           },
           {
             "result": {
-              "duration": 15058614700,
+              "duration": 7928787800,
               "status": "passed"
             },
-            "line": 14,
+            "line": 28,
             "name": "Enter the url \"http://practice.automationtesting.in/\"",
             "match": {
               "arguments": [
@@ -65,10 +65,10 @@
           },
           {
             "result": {
-              "duration": 14857976800,
+              "duration": 7635910100,
               "status": "passed"
             },
-            "line": 15,
+            "line": 29,
             "name": "Click on My Account link",
             "match": {
               "location": "LoginSteps.clickOnMyAccountLink()"
@@ -77,275 +77,31 @@
           },
           {
             "result": {
-              "duration": 253633500,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "Send username as \"rahaoui.bilalma\" and password as \"invalid.password\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "rahaoui.bilalma",
-                  "offset": 18
-                },
-                {
-                  "val": "invalid.password",
-                  "offset": 52
-                }
-              ],
-              "location": "LoginSteps.sendUsernameAsAndPasswordAs(String,String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 24373482400,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "Click on LOGIN button",
-            "match": {
-              "location": "LoginSteps.clickOnLOGINButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 173983600,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "verify login",
-            "match": {
-              "location": "LoginSteps.verifyLogin()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2019-06-12T19:37:00.070Z",
-        "before": [
-          {
-            "result": {
-              "duration": 64000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "LoginSteps.setup()"
-            }
-          }
-        ],
-        "line": 22,
-        "name": "Login with invalid data",
-        "description": "",
-        "id": "login-feature.;login-with-invalid-data;;3",
-        "after": [
-          {
-            "result": {
-              "duration": 759311300,
-              "status": "passed"
-            },
-            "match": {
-              "location": "LoginSteps.teardown()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 3502766800,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "Open browser",
-            "match": {
-              "location": "LoginSteps.openBrowser()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 12780674000,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "Enter the url \"http://practice.automationtesting.in/\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "http://practice.automationtesting.in/",
-                  "offset": 15
-                }
-              ],
-              "location": "LoginSteps.enterTheUrl(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 4745246900,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "Click on My Account link",
-            "match": {
-              "location": "LoginSteps.clickOnMyAccountLink()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 298812300,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "Send username as \"rahaoui.bilalma\" and password as \"Testing^^password@12456#\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "rahaoui.bilalma",
-                  "offset": 18
-                },
-                {
-                  "val": "Testing^^password@12456#",
-                  "offset": 52
-                }
-              ],
-              "location": "LoginSteps.sendUsernameAsAndPasswordAs(String,String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 4220474700,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "Click on LOGIN button",
-            "match": {
-              "location": "LoginSteps.clickOnLOGINButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "error_message": "java.lang.AssertionError: Test failed,error message in login page should not be visible\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat Steps.LoginSteps.verifyLogin(LoginSteps.java:86)\r\n\tat ✽.verify login(file:src/test/java/Feature/Login.feature:18)\r\n",
-              "duration": 23488000,
+              "error_message": "cucumber.runtime.CucumberException: Could not convert arguments for step [Send username and password] defined at \u0027Steps.LoginSteps.sendUsernameAndPassword(DataTable) in file:/C:/Users/Bilal/Desktop/AutomationExecuteProject/target/test-classes/\u0027.\nIt appears you did not register a data table type. The details are in the stacktrace below.\r\n\tat cucumber.runner.PickleStepDefinitionMatch.registerTypeInConfiguration(PickleStepDefinitionMatch.java:59)\r\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:44)\r\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\r\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\r\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)\r\n\tat cucumber.runner.TestCase.run(TestCase.java:46)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:49)\r\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:123)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:65)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat cucumber.api.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:147)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\r\n\tat com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)\r\n\tat com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)\r\n\tat com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)\r\nCaused by: io.cucumber.datatable.UndefinedDataTableTypeException: Can\u0027t convert DataTable to cucumber.api.DataTable.\nPlease register a DataTableType with a TableTransformer, TableEntryTransformer or TableRowTransformer for cucumber.api.DataTable.\r\n\tat io.cucumber.datatable.UndefinedDataTableTypeException.singletonNoConverterDefined(UndefinedDataTableTypeException.java:15)\r\n\tat io.cucumber.datatable.DataTableTypeRegistryTableConverter.toSingleton(DataTableTypeRegistryTableConverter.java:106)\r\n\tat io.cucumber.datatable.DataTableTypeRegistryTableConverter.convert(DataTableTypeRegistryTableConverter.java:75)\r\n\tat io.cucumber.datatable.DataTable.convert(DataTable.java:362)\r\n\tat io.cucumber.stepexpression.StepExpressionFactory$3.transform(StepExpressionFactory.java:73)\r\n\tat io.cucumber.stepexpression.DataTableArgument.getValue(DataTableArgument.java:19)\r\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:41)\r\n\t... 29 more\r\n",
+              "duration": 2891100,
               "status": "failed"
             },
-            "line": 18,
-            "name": "verify login",
+            "line": 30,
+            "name": "Send username and password",
             "match": {
-              "location": "LoginSteps.verifyLogin()"
+              "location": "LoginSteps.sendUsernameAndPassword(DataTable)"
             },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2019-06-12T19:37:26.410Z",
-        "before": [
-          {
-            "result": {
-              "duration": 54400,
-              "status": "passed"
-            },
-            "match": {
-              "location": "LoginSteps.setup()"
-            }
-          }
-        ],
-        "line": 23,
-        "name": "Login with invalid data",
-        "description": "",
-        "id": "login-feature.;login-with-invalid-data;;4",
-        "after": [
-          {
-            "result": {
-              "duration": 680899000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "LoginSteps.teardown()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 3421910900,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "Open browser",
-            "match": {
-              "location": "LoginSteps.openBrowser()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 65706585000,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "Enter the url \"http://practice.automationtesting.in/\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "http://practice.automationtesting.in/",
-                  "offset": 15
-                }
-              ],
-              "location": "LoginSteps.enterTheUrl(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 6261793400,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "Click on My Account link",
-            "match": {
-              "location": "LoginSteps.clickOnMyAccountLink()"
-            },
+            "rows": [
+              {
+                "cells": [
+                  "rahaoui.bilalma",
+                  "Testing^^password@12456#"
+                ]
+              }
+            ],
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 258559100,
-              "status": "passed"
+              "duration": 12200,
+              "status": "skipped"
             },
-            "line": 16,
-            "name": "Send username as \"invalid.email\" and password as \"Testing^^password@12456#\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "invalid.email",
-                  "offset": 18
-                },
-                {
-                  "val": "Testing^^password@12456#",
-                  "offset": 50
-                }
-              ],
-              "location": "LoginSteps.sendUsernameAsAndPasswordAs(String,String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3560162400,
-              "status": "passed"
-            },
-            "line": 17,
+            "line": 32,
             "name": "Click on LOGIN button",
             "match": {
               "location": "LoginSteps.clickOnLOGINButton()"
@@ -354,134 +110,13 @@
           },
           {
             "result": {
-              "duration": 63578000,
-              "status": "passed"
+              "duration": 6200,
+              "status": "skipped"
             },
-            "line": 18,
-            "name": "verify login",
+            "line": 33,
+            "name": "User must be successfully redirected to home page",
             "match": {
-              "location": "LoginSteps.verifyLogin()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2019-06-12T19:38:46.364Z",
-        "before": [
-          {
-            "result": {
-              "duration": 71100,
-              "status": "passed"
-            },
-            "match": {
-              "location": "LoginSteps.setup()"
-            }
-          }
-        ],
-        "line": 24,
-        "name": "Login with invalid data",
-        "description": "",
-        "id": "login-feature.;login-with-invalid-data;;5",
-        "after": [
-          {
-            "result": {
-              "duration": 685432700,
-              "status": "passed"
-            },
-            "match": {
-              "location": "LoginSteps.teardown()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 3507207500,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "Open browser",
-            "match": {
-              "location": "LoginSteps.openBrowser()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 20499985400,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "Enter the url \"http://practice.automationtesting.in/\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "http://practice.automationtesting.in/",
-                  "offset": 15
-                }
-              ],
-              "location": "LoginSteps.enterTheUrl(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 14375673900,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "Click on My Account link",
-            "match": {
-              "location": "LoginSteps.clickOnMyAccountLink()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 218587800,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "Send username as \"invalid.email\" and password as \"invalid.password\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "invalid.email",
-                  "offset": 18
-                },
-                {
-                  "val": "invalid.password",
-                  "offset": 50
-                }
-              ],
-              "location": "LoginSteps.sendUsernameAsAndPasswordAs(String,String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 12688132300,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "Click on LOGIN button",
-            "match": {
-              "location": "LoginSteps.clickOnLOGINButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 61662200,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "verify login",
-            "match": {
-              "location": "LoginSteps.verifyLogin()"
+              "location": "LoginSteps.userMustBeSuccessfullyRedirectedToHomePage()"
             },
             "keyword": "Then "
           }

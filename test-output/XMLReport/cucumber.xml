@@ -1,53 +1,59 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="218.286605">
-    <testcase classname="Login feature." name="Login with invalid data" time="59.961845">
-        <system-out>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="21.919412">
+    <testcase classname="Login feature." name="Login with different data" time="21.919412">
+        <failure message="cucumber.runtime.CucumberException: Could not convert arguments for step [Send username and password] defined at 'Steps.LoginSteps.sendUsernameAndPassword(DataTable) in file:/C:/Users/Bilal/Desktop/AutomationExecuteProject/target/test-classes/'.&#10;It appears you did not register a data table type. The details are in the stacktrace below.&#13;&#10;&#9;at cucumber.runner.PickleStepDefinitionMatch.registerTypeInConfiguration(PickleStepDefinitionMatch.java:59)&#13;&#10;&#9;at cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:44)&#13;&#10;&#9;at cucumber.runner.TestStep.executeStep(TestStep.java:65)&#13;&#10;&#9;at cucumber.runner.TestStep.run(TestStep.java:50)&#13;&#10;&#9;at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)&#13;&#10;&#9;at cucumber.runner.TestCase.run(TestCase.java:46)&#13;&#10;&#9;at cucumber.runner.Runner.runPickle(Runner.java:49)&#13;&#10;&#9;at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)&#13;&#10;&#9;at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)&#13;&#10;&#9;at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)&#13;&#10;&#9;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;&#10;&#9;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;&#10;&#9;at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)&#13;&#10;&#9;at cucumber.api.junit.Cucumber.runChild(Cucumber.java:123)&#13;&#10;&#9;at cucumber.api.junit.Cucumber.runChild(Cucumber.java:65)&#13;&#10;&#9;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;&#10;&#9;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;&#10;&#9;at cucumber.api.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:147)&#13;&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;&#10;&#9;at org.junit.runner.JUnitCore.run(JUnitCore.java:137)&#13;&#10;&#9;at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)&#13;&#10;&#9;at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)&#13;&#10;&#9;at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)&#13;&#10;&#9;at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)&#13;&#10;Caused by: io.cucumber.datatable.UndefinedDataTableTypeException: Can't convert DataTable to cucumber.api.DataTable.&#10;Please register a DataTableType with a TableTransformer, TableEntryTransformer or TableRowTransformer for cucumber.api.DataTable.&#13;&#10;&#9;at io.cucumber.datatable.UndefinedDataTableTypeException.singletonNoConverterDefined(UndefinedDataTableTypeException.java:15)&#13;&#10;&#9;at io.cucumber.datatable.DataTableTypeRegistryTableConverter.toSingleton(DataTableTypeRegistryTableConverter.java:106)&#13;&#10;&#9;at io.cucumber.datatable.DataTableTypeRegistryTableConverter.convert(DataTableTypeRegistryTableConverter.java:75)&#13;&#10;&#9;at io.cucumber.datatable.DataTable.convert(DataTable.java:362)&#13;&#10;&#9;at io.cucumber.stepexpression.StepExpressionFactory$3.transform(StepExpressionFactory.java:73)&#13;&#10;&#9;at io.cucumber.stepexpression.DataTableArgument.getValue(DataTableArgument.java:19)&#13;&#10;&#9;at cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:41)&#13;&#10;&#9;... 29 more&#13;&#10;">
             <![CDATA[Given Open browser..........................................................passed
 When Enter the url "http://practice.automationtesting.in/"..................passed
 And Click on My Account link................................................passed
-And Send username as "rahaoui.bilalma" and password as "invalid.password"...passed
-And Click on LOGIN button...................................................passed
-Then verify login...........................................................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="Login feature." name="Login with invalid data 2" time="26.333801">
-        <failure message="java.lang.AssertionError: Test failed,error message in login page should not be visible&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#13;&#10;&#9;at Steps.LoginSteps.verifyLogin(LoginSteps.java:86)&#13;&#10;&#9;at ✽.verify login(file:src/test/java/Feature/Login.feature:18)&#13;&#10;">
-            <![CDATA[Given Open browser..........................................................passed
-When Enter the url "http://practice.automationtesting.in/"..................passed
-And Click on My Account link................................................passed
-And Send username as "rahaoui.bilalma" and password as "Testing^^password@12456#".passed
-And Click on LOGIN button...................................................passed
-Then verify login...........................................................failed
+And Send username and password..............................................failed
+And Click on LOGIN button...................................................skipped
+Then User must be successfully redirected to home page......................skipped
 
 StackTrace:
-java.lang.AssertionError: Test failed,error message in login page should not be visible
-	at org.junit.Assert.fail(Assert.java:88)
-	at Steps.LoginSteps.verifyLogin(LoginSteps.java:86)
-	at ✽.verify login(file:src/test/java/Feature/Login.feature:18)
+cucumber.runtime.CucumberException: Could not convert arguments for step [Send username and password] defined at 'Steps.LoginSteps.sendUsernameAndPassword(DataTable) in file:/C:/Users/Bilal/Desktop/AutomationExecuteProject/target/test-classes/'.
+It appears you did not register a data table type. The details are in the stacktrace below.
+	at cucumber.runner.PickleStepDefinitionMatch.registerTypeInConfiguration(PickleStepDefinitionMatch.java:59)
+	at cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:44)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:65)
+	at cucumber.runner.TestStep.run(TestStep.java:50)
+	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)
+	at cucumber.runner.TestCase.run(TestCase.java:46)
+	at cucumber.runner.Runner.runPickle(Runner.java:49)
+	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:123)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:65)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at cucumber.api.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:147)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: io.cucumber.datatable.UndefinedDataTableTypeException: Can't convert DataTable to cucumber.api.DataTable.
+Please register a DataTableType with a TableTransformer, TableEntryTransformer or TableRowTransformer for cucumber.api.DataTable.
+	at io.cucumber.datatable.UndefinedDataTableTypeException.singletonNoConverterDefined(UndefinedDataTableTypeException.java:15)
+	at io.cucumber.datatable.DataTableTypeRegistryTableConverter.toSingleton(DataTableTypeRegistryTableConverter.java:106)
+	at io.cucumber.datatable.DataTableTypeRegistryTableConverter.convert(DataTableTypeRegistryTableConverter.java:75)
+	at io.cucumber.datatable.DataTable.convert(DataTable.java:362)
+	at io.cucumber.stepexpression.StepExpressionFactory$3.transform(StepExpressionFactory.java:73)
+	at io.cucumber.stepexpression.DataTableArgument.getValue(DataTableArgument.java:19)
+	at cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:41)
+	... 29 more
 ]]>
         </failure>
-    </testcase>
-    <testcase classname="Login feature." name="Login with invalid data 3" time="79.953926">
-        <system-out>
-            <![CDATA[Given Open browser..........................................................passed
-When Enter the url "http://practice.automationtesting.in/"..................passed
-And Click on My Account link................................................passed
-And Send username as "invalid.email" and password as "Testing^^password@12456#".passed
-And Click on LOGIN button...................................................passed
-Then verify login...........................................................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="Login feature." name="Login with invalid data 4" time="52.037033">
-        <system-out>
-            <![CDATA[Given Open browser..........................................................passed
-When Enter the url "http://practice.automationtesting.in/"..................passed
-And Click on My Account link................................................passed
-And Send username as "invalid.email" and password as "invalid.password".....passed
-And Click on LOGIN button...................................................passed
-Then verify login...........................................................passed
-]]>
-        </system-out>
     </testcase>
 </testsuite>
