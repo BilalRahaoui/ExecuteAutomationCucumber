@@ -20,7 +20,7 @@ import java.util.Map;
 public class LoginSteps {
     private WebDriver driver = null;
     private String globalusername = null;
-
+/*
     @Before()
     public void setup() {
         String webdriverPath = "src/main/resources/WebDrivers/chromedriver.exe";
@@ -33,7 +33,7 @@ public class LoginSteps {
         driver.manage().deleteAllCookies();
         driver.quit();
         driver = null;
-    }
+    }*/
 
     @Given("Open browser")
     public void openBrowser() {
@@ -85,12 +85,11 @@ public class LoginSteps {
 
     @And("Send username and password")
     public void sendUsernameAndPassword(DataTable table) {
-        List<Map<String, String>> data = table.asMaps(String.class, String.class);
         WebElement usernameTextBox = driver.findElement(By.id("username"));
         WebElement passwordTextBox = driver.findElement(By.id("password"));
+        List<Map<String, String>> data = table.asMaps(String.class, String.class);
         usernameTextBox.sendKeys(data.get(0).get("username"));
         passwordTextBox.sendKeys(data.get(0).get("password"));
-        //still not complete!!To check later
 
     }
 

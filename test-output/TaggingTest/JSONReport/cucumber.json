@@ -1,0 +1,69 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2019-06-14T20:52:16.386Z",
+        "line": 9,
+        "name": "Verify search functionality",
+        "description": "",
+        "id": "this-feature-is-for-tags-in-cucumber.;verify-search-functionality",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 931900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "this is a search test",
+            "match": {
+              "location": "TaggingSteps.thisIsASearchTest()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-06-14T20:52:16.393Z",
+        "line": 12,
+        "name": "Verify advanced search functionality",
+        "description": "",
+        "id": "this-feature-is-for-tags-in-cucumber.;verify-advanced-search-functionality",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 971300,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "this is a advanced search test",
+            "match": {
+              "location": "TaggingSteps.thisIsAAdvancedSearchTest()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@E2ETest"
+          }
+        ]
+      }
+    ],
+    "name": "This feature is for tags in cucumber.",
+    "description": "",
+    "id": "this-feature-is-for-tags-in-cucumber.",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/Feature/Tagging.feature",
+    "tags": []
+  }
+]

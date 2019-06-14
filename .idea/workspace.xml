@@ -2,21 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d7dc5c6-3cff-4934-acab-1911ae565433" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_cucumber_core_1_2_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_cucumber_html_0_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_cucumber_java_1_2_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_cucumber_jvm_deps_1_0_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_gherkin_2_12_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AutomationExecuteProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AutomationExecuteProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Feature/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Feature/Login.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Steps/LoginSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Steps/LoginSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestRunner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestRunner/LoginTestRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/Steps/LoginSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Steps/LoginSteps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/HTMLReport/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/HTMLReport/report.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/JSONReport/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/JSONReport/cucumber.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/XMLReport/cucumber.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/XMLReport/cucumber.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/HTMLReport/formatter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/HTMLReport/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/HTMLReport/jquery-1.8.2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/HTMLReport/report.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/HTMLReport/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/JSONReport/cucumber.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/XMLReport/cucumber.xml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,44 +28,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Steps/LoginSteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="92" column="44" selection-start-line="92" selection-start-column="44" selection-end-line="92" selection-end-column="44" />
+            <state relative-caret-position="425">
+              <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1163#1164#0" expanded="true" />
+                <element signature="e#1194#1195#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/TestRunner/TestRunner.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Feature/Tagging.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="100">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Steps/TaggingSteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="48" selection-start-line="48" selection-end-line="48" />
+            <state relative-caret-position="275">
+              <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Feature/Login.feature">
+        <entry file="file://$PROJECT_DIR$/src/test/java/TestRunner/TaggingTestRunner.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
-              <caret line="33" column="52" selection-start-line="33" selection-start-column="52" selection-end-line="33" selection-end-column="52" />
+              <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -97,10 +96,15 @@
         <option value="$PROJECT_DIR$/src/test/java/LogiWithDataTable.java" />
         <option value="$PROJECT_DIR$/src/test/java/Feature/InvalidLogin.feature" />
         <option value="$PROJECT_DIR$/src/test/java/Steps/LogiWithDataTable.java" />
-        <option value="$PROJECT_DIR$/src/test/java/TestRunner/TestRunner.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/Feature/Login.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/TestRunner/TestRunner.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Steps/TaggingStep.java" />
+        <option value="$PROJECT_DIR$/src/test/java/TestRunner/LoginTestRunner.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Steps/TaggingSteps.java" />
         <option value="$PROJECT_DIR$/src/test/java/Steps/LoginSteps.java" />
+        <option value="$PROJECT_DIR$/src/test/java/TestRunner/TaggingTestRunner.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Feature/Tagging.feature" />
       </list>
     </option>
   </component>
@@ -111,12 +115,14 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="953" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -222,7 +228,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestRunner">
+  <component name="RunManager" selected="JUnit.TaggingTestRunner">
+    <configuration name="Scenario: Login with data table params with header" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="4" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/Feature/Login.feature" />
+      <option name="GLUE" value="Steps" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="AutomationExecuteProject" />
+      <option name="NAME_FILTER" value="^Login with data table params with header$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm4SMFormatter --name &quot;^Login with data table params with header$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Login with data table params with header" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Scenario: Login with invalid data" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="4" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/Feature/InvalidLogin.feature" />
@@ -242,7 +267,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Verify logout" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="4" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/Feature/Tagging.feature" />
+      <option name="GLUE" value="Steps" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="AutomationExecuteProject" />
+      <option name="NAME_FILTER" value="^Verify logout$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm4SMFormatter --name &quot;^Verify logout$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Verify logout" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AutomationExecuteProject" />
       <extension name="coverage">
         <pattern>
@@ -251,7 +295,22 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="TestRunner" />
-      <option name="MAIN_CLASS_NAME" value="TestRunner.TestRunner" />
+      <option name="MAIN_CLASS_NAME" value="TestRunner.LoginTestRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TaggingTestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AutomationExecuteProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TestRunner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TestRunner" />
+      <option name="MAIN_CLASS_NAME" value="TestRunner.TaggingTestRunner" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -259,7 +318,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestRunner" />
+        <item itemvalue="JUnit.TaggingTestRunner" />
+        <item itemvalue="JUnit.LoginTestRunner" />
+        <item itemvalue="Cucumber java.Scenario: Login with data table params with header" />
+        <item itemvalue="Cucumber java.Scenario: Verify logout" />
         <item itemvalue="Cucumber java.Scenario: Login with invalid data" />
       </list>
     </recent_temporary>
@@ -278,42 +340,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestRunner - 2019.06.13 at 22h 57m 56s.xml">
-      <configuration name="TestRunner" configurationId="JUnit" />
+    <history-entry file="LoginTestRunner - 2019.06.14 at 21h 27m 47s.xml">
+      <configuration name="LoginTestRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestRunner - 2019.06.13 at 22h 59m 50s.xml">
-      <configuration name="TestRunner" configurationId="JUnit" />
+    <history-entry file="TaggingTestRunner - 2019.06.14 at 21h 28m 58s.xml">
+      <configuration name="TaggingTestRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestRunner - 2019.06.14 at 19h 31m 09s.xml">
-      <configuration name="TestRunner" configurationId="JUnit" />
+    <history-entry file="TaggingTestRunner - 2019.06.14 at 21h 29m 40s.xml">
+      <configuration name="TaggingTestRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestRunner - 2019.06.14 at 19h 34m 00s.xml">
-      <configuration name="TestRunner" configurationId="JUnit" />
+    <history-entry file="TaggingTestRunner - 2019.06.14 at 21h 45m 41s.xml">
+      <configuration name="TaggingTestRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestRunner - 2019.06.14 at 19h 53m 09s.xml">
-      <configuration name="TestRunner" configurationId="JUnit" />
+    <history-entry file="TaggingTestRunner - 2019.06.14 at 21h 45m 58s.xml">
+      <configuration name="TaggingTestRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestRunner - 2019.06.14 at 19h 54m 41s.xml">
-      <configuration name="TestRunner" configurationId="JUnit" />
+    <history-entry file="TaggingTestRunner - 2019.06.14 at 21h 47m 24s.xml">
+      <configuration name="TaggingTestRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestRunner - 2019.06.14 at 19h 55m 38s.xml">
-      <configuration name="TestRunner" configurationId="JUnit" />
+    <history-entry file="TaggingTestRunner - 2019.06.14 at 21h 49m 59s.xml">
+      <configuration name="TaggingTestRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestRunner - 2019.06.14 at 19h 59m 14s.xml">
-      <configuration name="TestRunner" configurationId="JUnit" />
+    <history-entry file="TaggingTestRunner - 2019.06.14 at 21h 50m 19s.xml">
+      <configuration name="TaggingTestRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestRunner - 2019.06.14 at 20h 00m 14s.xml">
-      <configuration name="TestRunner" configurationId="JUnit" />
+    <history-entry file="TaggingTestRunner - 2019.06.14 at 21h 50m 35s.xml">
+      <configuration name="TaggingTestRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestRunner - 2019.06.14 at 20h 09m 08s.xml">
-      <configuration name="TestRunner" configurationId="JUnit" />
+    <history-entry file="TaggingTestRunner - 2019.06.14 at 21h 51m 50s.xml">
+      <configuration name="TaggingTestRunner" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.2488889" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.5134264" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -321,8 +383,8 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32998884" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3768116" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32995495" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.38063064" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -373,13 +435,6 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/Steps/LoginDataTable.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/Steps/LogiWithDataTable.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/Feature/InvalidLogin.feature" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/Feature/Login.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="33" column="52" selection-start-line="33" selection-start-column="52" selection-end-line="33" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -387,23 +442,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestRunner/TestRunner.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Feature/Login.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+        <state relative-caret-position="550">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestRunner/LoginTestRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Steps/TaggingSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Steps/LoginSteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="92" column="44" selection-start-line="92" selection-start-column="44" selection-end-line="92" selection-end-column="44" />
+        <state relative-caret-position="425">
+          <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1163#1164#0" expanded="true" />
+            <element signature="e#1194#1195#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestRunner/TaggingTestRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Feature/Tagging.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>

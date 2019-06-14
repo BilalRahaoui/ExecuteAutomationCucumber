@@ -30,8 +30,7 @@ Feature: Login feature.
     And Send username and password
       | username        | password                 |
       | rahaoui.bilalma | invalid.password         |
-      | invalid.email   | invalid.password         |
-      | invalid.email   | Testing^^password@12456# |
+
     And Click on LOGIN button
     Then verify login
 
