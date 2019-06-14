@@ -1,12 +1,13 @@
 package Steps;
 
-import cucumber.api.DataTable;
+
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import io.cucumber.datatable.DataTable;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -14,6 +15,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.List;
+import java.util.Map;
 
 public class LoginSteps {
     private WebDriver driver = null;
@@ -51,8 +53,8 @@ public class LoginSteps {
     }
 
 
-/*
-    @And("Send username as \"([^\"]*)\" and password as \"([^\"]*)\"$")
+
+    /*@And("Send username as \"([^\"]*)\" and password as \"([^\"]*)\"$")
     public void sendUsernameAsAndPasswordAs(String username, String password) {
         globalusername = username;
         WebElement usernameTextBox = driver.findElement(By.id("username"));
@@ -61,20 +63,8 @@ public class LoginSteps {
         passwordTextBox.sendKeys(password);
     }
 
- */
+     */
 
-    @And("Send username and password")
-    public void sendUsernameAndPassword(DataTable table) {
-        List<List<String>> data = table.raw();
-
-        WebElement usernameTextBox = driver.findElement(By.id("username"));
-        WebElement passwordTextBox = driver.findElement(By.id("password"));
-        String username = data.get(0).get(0);
-        String password = data.get(0).get(1);
-        usernameTextBox.sendKeys(username);
-        passwordTextBox.sendKeys(password);
-        globalusername = username;
-    }
 
     @And("Click on LOGIN button")
     public void clickOnLOGINButton() {
@@ -82,14 +72,27 @@ public class LoginSteps {
         loginButton.click();
     }
 
-    @Then("User must be successfully redirected to home page")
-    public void userMustBeSuccessfullyRedirectedToHomePage() {
-        WebElement textToCheck = driver.findElement(By.xpath("//div[@id='body']//p[1]"));
-        boolean expectedResult = textToCheck.getText().contains(globalusername);
-        Assert.assertTrue("Test failed because text is not visible or not match", expectedResult);
-    }
-
     /*
+        @Then("User must be successfully redirected to home page")
+        public void userMustBeSuccessfullyRedirectedToHomePage() {
+            WebElement textToCheck = driver.findElement(By.xpath("//div[@id='body']//p[1]"));
+            boolean expectedResult = textToCheck.getText().contains(globalusername);
+            Assert.assertTrue("Test failed because text is not visible or not match", expectedResult);
+        }
+        */
+
+    //Login using Data table with header
+
+    @And("Send username and password")
+    public void sendUsernameAndPassword(DataTable table) {
+        List<Map<String, String>> data = table.asMaps(String.class, String.class);
+        WebElement usernameTextBox = driver.findElement(By.id("username"));
+        WebElement passwordTextBox = driver.findElement(By.id("password"));
+        usernameTextBox.sendKeys(data.get(0).get("username"));
+        passwordTextBox.sendKeys(data.get(0).get("password"));
+        //still not complete!!To check later
+
+    }
 
     @Then("verify login")
     public void verifyLogin() {
@@ -97,12 +100,10 @@ public class LoginSteps {
             WebElement errorMessage = driver.findElement(By.xpath("//ul[@class='woocommerce-error']"));
             if (errorMessage.getText().contains("Invalid username")) {
                 Assert.assertTrue("Invalid username", true);
-            }
-            else if (errorMessage.getText().contains("The password you entered for the username")) {
+            } else if (errorMessage.getText().contains("The password you entered for the username")) {
                 Assert.assertTrue("Invalid password", true);
             }
-        }
-        else{
+        } else {
             Assert.fail("Test failed,login should not pass with invalid data!");
         }
     }
@@ -111,13 +112,8 @@ public class LoginSteps {
     //Method to calculate number of given element
     private int elementIsPresent() {
         List<WebElement> listOfElements = driver.findElements(By.xpath("//ul[@class='woocommerce-error']"));
-        int numberOfElementsFound = listOfElements.size();
-        if (numberOfElementsFound == 0) {
-            return 0;
-        } else {
-            return numberOfElementsFound;
-        }
+        return listOfElements.size();
     }
-*/
+
 
 }

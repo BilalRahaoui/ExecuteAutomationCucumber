@@ -11,26 +11,33 @@ Feature: Login feature.
 
   #Scenario Outline: Login with different data
    # Given Open browser
-   # When Enter the url "http://practice.automationtesting.in/"
-   # And Click on My Account link
-   # And Send username as "<username>" and password as "<password>"
-   # And Click on LOGIN button
-   # Then verify login
-   # Examples:
-      #  | username        | password                 |
-      # | rahaoui.bilalma | invalid.password         |
+    #When Enter the url "http://practice.automationtesting.in/"
+    #And Click on My Account link
+    #And Send username as "<username>" and password as "<password>"
+    #And Click on LOGIN button
+    #Then verify login
+    #Examples:
+     # | username        | password                 |
+      #| rahaoui.bilalma | invalid.password         |
       #| rahaoui.bilalma | Testing^^password@12456# |
       #| invalid.email   | Testing^^password@12456# |
       #| invalid.email   | invalid.password         |
 
-  Scenario: Login with different data
+  Scenario: Login with data table params with header
     Given Open browser
     When Enter the url "http://practice.automationtesting.in/"
     And Click on My Account link
     And Send username and password
-          | rahaoui.bilalma | Testing^^password@12456# |
+      | username        | password                 |
+      | rahaoui.bilalma | invalid.password         |
+      | invalid.email   | invalid.password         |
+      | invalid.email   | Testing^^password@12456# |
     And Click on LOGIN button
-    Then User must be successfully redirected to home page
+    Then verify login
+
+
+
+
 
 
 
