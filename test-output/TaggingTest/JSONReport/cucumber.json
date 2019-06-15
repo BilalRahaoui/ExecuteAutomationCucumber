@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2019-06-14T20:52:16.386Z",
+        "start_timestamp": "2019-06-15T11:31:10.984Z",
         "line": 9,
         "name": "Verify search functionality",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 931900,
+              "duration": 620600,
               "status": "passed"
             },
             "line": 10,
@@ -26,12 +26,12 @@
         ],
         "tags": [
           {
-            "name": "@RegressionTest"
+            "name": "@E2ETest"
           }
         ]
       },
       {
-        "start_timestamp": "2019-06-14T20:52:16.393Z",
+        "start_timestamp": "2019-06-15T11:31:10.995Z",
         "line": 12,
         "name": "Verify advanced search functionality",
         "description": "",
@@ -41,7 +41,7 @@
         "steps": [
           {
             "result": {
-              "duration": 971300,
+              "duration": 161300,
               "status": "passed"
             },
             "line": 13,

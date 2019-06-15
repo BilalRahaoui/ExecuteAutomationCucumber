@@ -10,7 +10,7 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@RegressionTest"
+      "name": "@E2ETest"
     }
   ]
 });

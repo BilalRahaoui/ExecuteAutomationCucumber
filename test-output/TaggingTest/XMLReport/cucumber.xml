@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="0.00514">
-    <testcase classname="This feature is for tags in cucumber." name="Verify search functionality" time="0.003597">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="0.008176">
+    <testcase classname="This feature is for tags in cucumber." name="Verify search functionality" time="0.006475">
         <system-out>
             <![CDATA[Given this is a search test.................................................passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="This feature is for tags in cucumber." name="Verify advanced search functionality" time="0.001543">
+    <testcase classname="This feature is for tags in cucumber." name="Verify advanced search functionality" time="0.001701">
         <system-out>
             <![CDATA[Given this is a advanced search test........................................passed
 ]]>

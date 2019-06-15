@@ -19,7 +19,10 @@ import org.junit.runner.RunWith;
                 "junit:test-output/TaggingTest/XMLReport/cucumber.xml" // to generate xml file report
         },
         strict = true, // default is false, if true, test will fail if step definition is undefined, else test will be ignored
-        tags = {"@E2ETest,@RegressionTest"}
+        //tags = {"@SanityTest,@E2ETest"}
+        //{"@SanityTest,@E2ETest"} ==> Execute steps which have sanityTest & steps which have E2ETest
+        //{"@SanityTest","@E2ETest"} ==> Execute steps which have sanitytest & E2ETest in the same time
+        tags = {"~@SanityTest"} //ignore scenarios under SanityTest
 
 )
 

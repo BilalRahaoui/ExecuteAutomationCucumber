@@ -2,18 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d7dc5c6-3cff-4934-acab-1911ae565433" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Feature/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Feature/Login.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/LoginSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Steps/LoginSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestRunner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestRunner/LoginTestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Steps/LoginSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Steps/LoginSteps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/HTMLReport/formatter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/HTMLReport/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/HTMLReport/jquery-1.8.2.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/HTMLReport/report.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/HTMLReport/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/JSONReport/cucumber.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/XMLReport/cucumber.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Feature/Tagging.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Feature/Tagging.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestRunner/TaggingTestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestRunner/TaggingTestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/TaggingTest/HTMLReport/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/TaggingTest/HTMLReport/report.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/TaggingTest/JSONReport/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/TaggingTest/JSONReport/cucumber.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/TaggingTest/XMLReport/cucumber.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/TaggingTest/XMLReport/cucumber.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,7 +26,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Steps/LoginSteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
+            <state relative-caret-position="525">
               <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -42,20 +37,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Feature/Tagging.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            <state relative-caret-position="275">
+              <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/Steps/TaggingSteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+            <state relative-caret-position="200">
+              <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -63,8 +58,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestRunner/TaggingTestRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+            <state relative-caret-position="241">
+              <caret line="24" column="67" selection-start-line="24" selection-start-column="67" selection-end-line="24" selection-end-column="67" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -103,8 +98,8 @@
         <option value="$PROJECT_DIR$/src/test/java/TestRunner/LoginTestRunner.java" />
         <option value="$PROJECT_DIR$/src/test/java/Steps/TaggingSteps.java" />
         <option value="$PROJECT_DIR$/src/test/java/Steps/LoginSteps.java" />
-        <option value="$PROJECT_DIR$/src/test/java/TestRunner/TaggingTestRunner.java" />
         <option value="$PROJECT_DIR$/src/test/java/Feature/Tagging.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/TestRunner/TaggingTestRunner.java" />
       </list>
     </option>
   </component>
@@ -115,7 +110,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="953" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -209,6 +204,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/Steps" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -340,40 +336,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LoginTestRunner - 2019.06.14 at 21h 27m 47s.xml">
-      <configuration name="LoginTestRunner" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TaggingTestRunner - 2019.06.14 at 21h 28m 58s.xml">
-      <configuration name="TaggingTestRunner" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TaggingTestRunner - 2019.06.14 at 21h 29m 40s.xml">
-      <configuration name="TaggingTestRunner" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TaggingTestRunner - 2019.06.14 at 21h 45m 41s.xml">
-      <configuration name="TaggingTestRunner" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TaggingTestRunner - 2019.06.14 at 21h 45m 58s.xml">
-      <configuration name="TaggingTestRunner" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TaggingTestRunner - 2019.06.14 at 21h 47m 24s.xml">
-      <configuration name="TaggingTestRunner" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TaggingTestRunner - 2019.06.14 at 21h 49m 59s.xml">
-      <configuration name="TaggingTestRunner" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TaggingTestRunner - 2019.06.14 at 21h 50m 19s.xml">
-      <configuration name="TaggingTestRunner" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TaggingTestRunner - 2019.06.14 at 21h 50m 35s.xml">
       <configuration name="TaggingTestRunner" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TaggingTestRunner - 2019.06.14 at 21h 51m 50s.xml">
       <configuration name="TaggingTestRunner" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TaggingTestRunner - 2019.06.15 at 12h 22m 38s.xml">
+      <configuration name="TaggingTestRunner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TaggingTestRunner - 2019.06.15 at 12h 23m 00s.xml">
+      <configuration name="TaggingTestRunner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TaggingTestRunner - 2019.06.15 at 12h 23m 44s.xml">
+      <configuration name="TaggingTestRunner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TaggingTestRunner - 2019.06.15 at 12h 24m 12s.xml">
+      <configuration name="TaggingTestRunner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TaggingTestRunner - 2019.06.15 at 12h 25m 17s.xml">
+      <configuration name="TaggingTestRunner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TaggingTestRunner - 2019.06.15 at 12h 25m 44s.xml">
+      <configuration name="TaggingTestRunner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TaggingTestRunner - 2019.06.15 at 12h 26m 50s.xml">
+      <configuration name="TaggingTestRunner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TaggingTestRunner - 2019.06.15 at 12h 31m 11s.xml">
+      <configuration name="TaggingTestRunner" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="953" y="0" width="974" height="1047" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.5134264" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -384,7 +379,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32995495" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.38063064" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.38063064" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -459,16 +454,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Steps/TaggingSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Steps/LoginSteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
+        <state relative-caret-position="525">
           <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -478,20 +466,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Feature/Tagging.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestRunner/TaggingTestRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+        <state relative-caret-position="241">
+          <caret line="24" column="67" selection-start-line="24" selection-start-column="67" selection-end-line="24" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Feature/Tagging.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Steps/TaggingSteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        <state relative-caret-position="200">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
         </state>
       </provider>
     </entry>
